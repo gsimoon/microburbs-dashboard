@@ -1,0 +1,84 @@
+* {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.App {
+    .main {
+        padding-top: 50px;
+        height: auto;
+        min-height: calc(100vh - 50px);
+        background-color: #FAF9F6;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .search {
+            position: relative;
+            width: 80%;
+            height: 80px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .button-type, .button-category {
+                width: 40%;
+                align-items: center;
+
+                button {
+                    width: 100%;
+                    height: 50%;
+                }
+
+                ul {
+                    padding: 0;
+                    list-style: none;
+                    border: 1px solid #ccc;
+                    margin-top: 0;
+                    background-color: #fff;
+                    z-index: 10;
+                    height: auto;
+
+                    li{
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #fff;
+                    }
+                }
+            }
+
+
+        }
+
+        .show {
+            border-radius: 10px;
+            height: auto;
+            width: 80%;
+            background-color: rgb(238, 237, 237);
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .card {
+                border-radius: 10px;
+                padding: 10px;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+                width: 100%;
+                background-color: #FAF9F6;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+}
